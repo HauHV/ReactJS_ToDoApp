@@ -42,3 +42,7 @@ body{
 #to-do-form {
   margin: 5px 10px;
 }
+
+.ListGroup{
+  padding-bottom: 10px;
+}
