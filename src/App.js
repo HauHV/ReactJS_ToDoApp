@@ -63,6 +63,12 @@ class App extends Component {
       items: items
     })
   }
+
+  handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      this.addItem(e);
+    }
+  }
     
   render() {
 
@@ -72,7 +78,8 @@ class App extends Component {
           <form id="to-do-form" onSubmit={this.addItem}>
             <input type="text" placeholder="Enter text"
               value={this.state.currentItem.text}
-              onChange={this.handleInput}  
+              onChange={this.handleInput} 
+              onKeyDown={this.handleKeyDown}
             />
             <button type="submit">Add</button>
           </form>
