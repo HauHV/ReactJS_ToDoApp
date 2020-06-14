@@ -83,13 +83,14 @@ class App extends Component {
             />
             <button type="submit">Add</button>
           </form>
+        </header>
+        <div className="ListGroup">
           <ListItems 
             items={this.state.items} 
             deleteItem={this.deleteItem}
             setUpdate={this.setUpdate}
           ></ListItems>
-
-        </header>
+        </div>
       </div>
     )
 
